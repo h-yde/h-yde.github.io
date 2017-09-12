@@ -1,7 +1,7 @@
 # Site settings
 title: Hyde Solutions
 description: A blog about my security research and projects I work on
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "/"
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
