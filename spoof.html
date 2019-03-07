@@ -1,5 +1,9 @@
 <script>
-  var card = document.getElementById("card");
+  function pwned(){
+    var card = document.getElementById("card");
+    alert("Card #" + card + " has been stolen!");
+  }
+  
 </script>
 <label>Enter Your Credit Card Details: </label><input id="card" name="cardnum" type="text"/><br>
-<input type="submit" value="Complete Transaction" onclick="javascript:alert("Card # "+card+"Stolen!")">
+<input type="submit" value="Complete Transaction" onclick="javascript:pwned()">
